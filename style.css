@@ -11,7 +11,7 @@ header {
  /* align-items: center; */
 }
 
-#imgbackup{
+#imgbackup {
  position: absolute;
  z-index: -2;
  width: 100vw;
@@ -40,6 +40,7 @@ header .navbar ul {
 }
 
 header .navbar ul li {
+ font-size: 2.4vw;
  list-style: none;
  font-family: Fira Code;
  font-style: normal;
@@ -67,6 +68,7 @@ header .intro .intro_text {
  justify-content: space-around;
  align-items: flex-start;
  height: 8vw;
+ font-size: 1.9vw;
 }
 
 header .intro .intro_text .cont1 {
@@ -98,6 +100,153 @@ header .intro .intro_photo img {
  width: 26.04vw;
 }
 
-main{
- background-image: url("")
+#main_container {
+ color: white;
+ width: 100vw;
+ background-image: url("./assests/images/Frame2.png");
+ background-color: black;
+ background-size: cover;
+ background-repeat: repeat;
+ background-position: center;
 }
+
+#about {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ min-height: 56.25vw;
+}
+
+#about .about_heading {
+ margin: 40px 0px 10px 0px;
+ font-family: Dongle;
+ text-align: center;
+ color: #00C2FF;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#about .about_content {
+ width: 85vw;
+ font-size: 1.9vw;
+ font-family: ABeeZee;
+ color: #FFFFFF;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#skills {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ min-height: 56.25vw;
+}
+
+#skills .skills_heading {
+ margin: 40px 0px 10px 0px;
+ font-family: Dongle;
+ text-align: center;
+ color: #00C2FF;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#skills .skills_content .skills_content_trio ul {
+ display: flex;
+ width: 90vw;
+ justify-content: space-around;
+}
+
+#skills .skills_content .skills_content_trio ul li {
+ transform: scale(0.7);
+ opacity: 40%;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ list-style: none;
+ width: 30vw;
+ transition: ease-in-out 0.7s all;
+}
+
+#skills .skills_content .skills_content_trio ul li:hover,
+#skills .skills_content .skills_content_trio ul li:active {
+ transform: scale(1.2);
+ opacity: 100%;
+}
+
+#skills .skills_content .skills_content_trio ul li img {
+ width: 20vw;
+}
+
+#skills .skills_content .skills_content_trio ul li .level {
+ font-family: Dhurjati;
+ text-align: center;
+ text-shadow: 0px 4.8px 4.8px rgba(0, 0, 0, 0.25);
+}
+
+#projects {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ min-height: 56.25vw;
+}
+
+#projects .projects_heading {
+ margin: 40px 0px 10px 0px;
+ font-family: Dongle;
+ text-align: center;
+ color: #00C2FF;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#projects .projects_content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ font-family: ABeeZee;
+ color: #FFFFFF;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#projects .projects_content ul {
+ display: grid;
+ grid-template-columns: 50vw 50vw;
+
+}
+
+#projects .projects_content ul li {
+ list-style: none;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ flex-direction: column;
+ margin-bottom: 20px;
+}
+
+#projects .projects_content ul li img {
+ width: 40.4vw;
+ margin-bottom: 5px;
+}
+
+#projects .projects_content ul li .project_name {
+ margin-bottom: 5px;
+ font-family: Odibee Sans;
+ color: #FAFF00;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#projects .projects_content ul li .project_types {
+ font-family: ABeeZee;
+ color: #FFFFFF;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ font-size: 1.9vw;
+ }
+ 
+ #show{
+ font-family: Odibee Sans;
+ margin-bottom: 30px;
+ }
+ 
+ 
