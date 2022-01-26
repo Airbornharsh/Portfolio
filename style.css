@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Dhurjati&family=Dongle&family=Fira+Code:wght@500&family=Odibee+Sans&display=swap');
+
 * {
  padding: 0;
  margin: 0;
@@ -14,11 +16,7 @@ body {
 
 header {
  position: relative;
- /* height: 56.25vw; */
  display: flex;
- border-bottom: 1px solid #00C2FF;
- /* justify-content: center; */
- /* align-items: center; */
 }
 
 #imgbackup {
@@ -26,7 +24,6 @@ header {
  z-index: -2;
  width: 100vw;
  height: 56.25vw;
- /* background-color: black; */
 }
 
 header .intro_background_image {
@@ -45,7 +42,7 @@ header .navbar ul {
  height: 5vw;
  width: 50vw;
  display: flex;
- justify-content: space-evenly;
+ justify-content: space-between;
  align-items: center;
 }
 
@@ -79,6 +76,7 @@ header .intro .intro_text {
  align-items: flex-start;
  height: 8vw;
  font-size: 1.9vw;
+ width: 60vw;
 }
 
 header .intro .intro_text .cont1 {
@@ -91,7 +89,8 @@ header .intro .intro_text .cont2 {
 }
 
 header .intro .intro_text .cont2_1 {
- font-family: Odibee Sans;
+ font-family: Teko;
+ transform: scaleX(1);
 }
 
 header .intro .intro_text .cont2_2 {
@@ -129,7 +128,6 @@ header .intro .intro_photo img {
 
 #about {
  background-image: url("Frame2.png");
- /* background-color: black; */
  background-size: cover;
  background-repeat: repeat;
  background-position: center;
@@ -145,7 +143,7 @@ header .intro .intro_photo img {
  color: #00C2FF;
  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  border-bottom: 4px solid #00C2FF;
-
+ transform: scaleX(1.4);
 }
 
 #about .about_content {
@@ -180,11 +178,11 @@ header .intro .intro_photo img {
  transition: ease-in-out 0.7s all;
 }
 
-#skills .skills_content  ul li img {
+#skills .skills_content ul li img {
  width: 20vw;
 }
 
-#skills .skills_content  ul li .level {
+#skills .skills_content ul li .level {
  font-family: Dhurjati;
  text-align: center;
  text-shadow: 0px 4.8px 4.8px rgba(0, 0, 0, 0.25);
@@ -212,13 +210,9 @@ header .intro .intro_photo img {
  align-items: center;
  flex-direction: column;
  margin-bottom: 20px;
- 
 }
 
-#projects .projects_content ul li:hover {
- 
- 
-}
+#projects .projects_content ul li:hover {}
 
 
 #projects .projects_content ul li img {
@@ -235,6 +229,7 @@ header .intro .intro_photo img {
  font-size: 1.9vw;
  color: #FAFF00;
  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ transform: scaleX(1.6);
 }
 
 #projects .projects_content ul li .project_types {
@@ -247,6 +242,7 @@ header .intro .intro_photo img {
 #show {
  font-family: Odibee Sans;
  padding-bottom: 50px;
+ transform: scaleX(1.5);
 }
 
 #contact {
@@ -282,6 +278,16 @@ header .intro .intro_photo img {
   min-height: 500px;
  }
 
+ #about .about_content {
+  font-size: 4vw;
+ }
+
+ header .intro .intro_text {
+  font-size: 2.8vw;
+
+
+ }
+
  #projects .projects_content ul {
   display: grid;
   grid-template-columns: 50vw 50vw;
@@ -292,11 +298,10 @@ header .intro .intro_photo img {
   height: 41.6vw;
   margin-bottom: 5px;
  }
- 
-#contact .contact_images ul li img {
-width: 6vw;
-height: 6vw;
- 
-}
+
+ #contact .contact_images ul li img {
+  width: 6vw;
+  height: 6vw;
+ }
 
 }
