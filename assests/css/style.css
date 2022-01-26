@@ -111,12 +111,10 @@ header .intro .intro_photo img {
 }
 
 #main_container {
- /* background: linear-gradient(180deg, #051E3E 0%, #004AAD 100%); */
  background: rgb(0, 24, 77);
  background: linear-gradient(90deg, rgba(0, 24, 77, 1) 0%, rgba(0, 53, 63, 1) 50%, rgba(0, 69, 65, 1) 100%);
  color: white;
  width: 100vw;
- /* background-color: black; */
 }
 
 #about,
@@ -127,11 +125,10 @@ header .intro .intro_photo img {
  align-items: center;
  justify-content: flex-start;
  border-bottom: 2px solid #00C2FF;
- /* padding-bottom: 100px; */
 }
 
 #about {
- background-image: url("./assests/images/Frame2.png");
+ background-image: url("/assests/images/Frame2.png");
  /* background-color: black; */
  background-size: cover;
  background-repeat: repeat;
