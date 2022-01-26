@@ -128,7 +128,7 @@ header .intro .intro_photo img {
 }
 
 #about {
- background-image: url("/assests/images/Frame2.png");
+ background-image: url("Frame2.png");
  /* background-color: black; */
  background-size: cover;
  background-repeat: repeat;
