@@ -1,4 +1,4 @@
-class skills {
+class Skills {
  constructor() {
   this.condition = false;
   this.li;
@@ -25,12 +25,39 @@ class skills {
    });
   }
  }
- 
+
+}
+
+class Intro {
+ constructor() {
+  this.gather();
+ }
+
+ gather() {
+  const ul = document.getElementById('intro_text');
+  setInterval(() => {
+   const randomx = Math.random() * 20;
+   const randomy = Math.random() * 20;
+   ul.style.transform = `translate(${randomx}px,${randomy}px)`;
+
+  }, 400);
+
+ }
+
+
+
+
+
+
+
+
+
 }
 
 class APP {
  static init() {
-  new skills();
+  new Intro();
+  new Skills();
  }
 
 }

@@ -77,7 +77,13 @@ header .intro .intro_text {
  height: 8vw;
  font-size: 1.9vw;
  width: 60vw;
+ transition: ease-in-out 1s all ;
 }
+
+header .intro .intro_text:hover {
+ transform: translateY(20px);
+}
+
 
 header .intro .intro_text .cont1 {
  font-family: Fira Code;
@@ -107,6 +113,13 @@ header .intro .intro_text .cont3 {
 header .intro .intro_photo img {
  height: 26.04vw;
  width: 26.04vw;
+ transition: ease-in-out 1s all;
+}
+
+header .intro .intro_photo img:hover {
+ -webkit-transform: rotate(20deg);
+ -moz-transform: rotate(20deg);
+ -o-transform: rotate(20deg);
 }
 
 #main_container {
@@ -144,6 +157,15 @@ header .intro .intro_photo img {
  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  border-bottom: 4px solid #00C2FF;
  transform: scaleX(1.4);
+ margin-bottom: 20px;
+}
+
+#about .about_heading:hover,
+#skills .skills_heading:hover,
+#projects .projects_heading:hover {
+ transform: scaleX(1.4) translateY(10px);
+ border-bottom: 4px solid #FFFFFF;
+ padding-bottom: -20px;
 }
 
 #about .about_content {
@@ -213,10 +235,15 @@ header .intro .intro_photo img {
  align-items: center;
  flex-direction: column;
  margin-bottom: 20px;
+ transition: ease-in-out 1s all;
+ /* -webkit-transform: scale(0.7) rotate(0); */
 }
 
-#projects .projects_content ul li:hover {}
-
+#projects .projects_content ul li:hover {
+ -webkit-transform: rotateY(360deg);
+ -moz-transform: rotateY(360deg);
+ -o-transform: rotateY(360deg);
+}
 
 #projects .projects_content ul li img {
  border-radius: 18px;
