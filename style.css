@@ -40,9 +40,9 @@ header .navbar {
 
 header .navbar ul {
  height: 5vw;
- width: 50vw;
+ width: 70vw;
  display: flex;
- justify-content: space-between;
+ justify-content: space-around;
  align-items: center;
 }
 
@@ -201,6 +201,9 @@ header .intro .intro_photo img {
 #projects .projects_content ul {
  display: grid;
  grid-template-columns: 33vw 33vw 33vw;
+ max-height: 420px;
+ overflow: auto;
+ margin-bottom: 30px;
 }
 
 #projects .projects_content ul li {
@@ -237,12 +240,6 @@ header .intro .intro_photo img {
  color: #FFFFFF;
  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  font-size: 1.9vw;
-}
-
-#show {
- font-family: Odibee Sans;
- padding-bottom: 50px;
- transform: scaleX(1.5);
 }
 
 #contact {

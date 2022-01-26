@@ -25,6 +25,7 @@ class skills {
    });
   }
  }
+ 
 }
 
 class APP {
