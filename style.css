@@ -164,14 +164,15 @@ header .intro .intro_photo img {
  padding-bottom: 200px;
 }
 
-#skills .skills_content .skills_content_trio ul {
- display: flex;
+#skills .skills_content ul {
+ display: grid;
+ grid-template-columns: 30vw 30vw 30vw;
  width: 90vw;
  justify-content: space-around;
  margin-bottom: 30px;
 }
 
-#skills .skills_content .skills_content_trio ul li {
+#skills .skills_content ul li {
  transform: scale(0.7);
  opacity: 40%;
  display: flex;
@@ -179,26 +180,14 @@ header .intro .intro_photo img {
  flex-direction: column;
  justify-content: center;
  list-style: none;
- width: 30vw;
  transition: ease-in-out 0.7s all;
 }
 
-#skills .skills_content .skills_content_trio ul li:hover,
-#skills .skills_content .skills_content_trio ul li:active {
- transform: scale(1.2);
- opacity: 100%;
-}
-
-.activated {
- transform: scale(1.2);
- opacity: 100%;
-}
-
-#skills .skills_content .skills_content_trio ul li img {
+#skills .skills_content  ul li img {
  width: 20vw;
 }
 
-#skills .skills_content .skills_content_trio ul li .level {
+#skills .skills_content  ul li .level {
  font-family: Dhurjati;
  text-align: center;
  text-shadow: 0px 4.8px 4.8px rgba(0, 0, 0, 0.25);
@@ -226,16 +215,27 @@ header .intro .intro_photo img {
  align-items: center;
  flex-direction: column;
  margin-bottom: 20px;
+ 
 }
 
+#projects .projects_content ul li:hover {
+ 
+ 
+}
+
+
 #projects .projects_content ul li img {
+ border-radius: 18px;
+ object-fit: cover;
  width: 26.4vw;
+ height: 27.18vw;
  margin-bottom: 5px;
 }
 
 #projects .projects_content ul li .project_name {
  margin-bottom: 5px;
  font-family: Odibee Sans;
+ font-size: 1.9vw;
  color: #FAFF00;
  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -269,6 +269,7 @@ header .intro .intro_photo img {
 
 #contact .contact_images ul li img {
  width: 3.5vw;
+ height: 3.5vw;
 }
 
 #credits {
@@ -291,7 +292,14 @@ header .intro .intro_photo img {
 
  #projects .projects_content ul li img {
   width: 40.4vw;
+  height: 41.6vw;
   margin-bottom: 5px;
  }
+ 
+#contact .contact_images ul li img {
+width: 6vw;
+height: 6vw;
+ 
+}
 
 }
