@@ -1,0 +1,103 @@
+* {
+ padding: 0;
+ margin: 0;
+}
+
+header {
+ position: relative;
+ height: 56.25vw;
+ display: flex;
+ /* justify-content: center; */
+ /* align-items: center; */
+}
+
+#imgbackup{
+ position: absolute;
+ z-index: -2;
+ width: 100vw;
+ height: 56.25vw;
+ background-color: black;
+}
+
+header .intro_background_image {
+ position: absolute;
+ z-index: -1;
+ width: 100vw;
+ height: 56.25vw;
+ opacity: 40%;
+}
+
+header .navbar {
+ position: absolute;
+}
+
+header .navbar ul {
+ height: 5vw;
+ width: 50vw;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+header .navbar ul li {
+ list-style: none;
+ font-family: Fira Code;
+ font-style: normal;
+ font-weight: 600;
+ line-height: 63px;
+ text-align: center;
+ color: #FFFFFF;
+}
+
+header .intro {
+ width: 100vw;
+ height: 56.25vw;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+header .intro .intro_text {
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ font-style: normal;
+ color: #FFFFFF;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: flex-start;
+ height: 8vw;
+}
+
+header .intro .intro_text .cont1 {
+ font-family: Fira Code;
+ color: #00C2FF;
+}
+
+header .intro .intro_text .cont2 {
+ display: flex;
+}
+
+header .intro .intro_text .cont2_1 {
+ font-family: Odibee Sans;
+}
+
+header .intro .intro_text .cont2_2 {
+ font-family: Teko;
+ font-weight: 600;
+ color: #00C7BB;
+ margin-left: 5px;
+}
+
+header .intro .intro_text .cont3 {
+ font-family: ABeeZee;
+}
+
+header .intro .intro_photo img {
+ height: 26.04vw;
+ width: 26.04vw;
+}
+
+main{
+ background-image: url("")
+}
