@@ -239,7 +239,7 @@ header .intro .intro_photo img:hover {
 #projects .projects_content ul {
  display: grid;
  grid-template-columns: 33vw 33vw 33vw;
- max-height: 420px;
+ max-height: 560px;
  overflow: auto;
  margin-bottom: 30px;
 }
@@ -260,6 +260,7 @@ header .intro .intro_photo img:hover {
  -moz-transform: rotateY(360deg);
  -o-transform: rotateY(360deg);
 }
+
 
 #projects .projects_content ul li img {
  border-radius: 18px;
@@ -324,13 +325,12 @@ header .intro .intro_photo img:hover {
 
  header .intro .intro_text {
   font-size: 2.8vw;
-
-
  }
 
  #projects .projects_content ul {
   display: grid;
   grid-template-columns: 50vw 50vw;
+  max-height: 420px;
  }
 
  #projects .projects_content ul li img {

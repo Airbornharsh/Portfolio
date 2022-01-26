@@ -23,6 +23,12 @@ class Skills {
      this.condition = true;
     }
    });
+   li.addEventListener('mouseleave', () => {
+    if (this.condition == true) {
+     this.li.style.transform = "scale(0.7)";
+     this.li.style.opacity = "40%";
+    }
+   });
   }
  }
 
