@@ -94,7 +94,23 @@ header .intro .intro_text {
  font-size: 1.9vw;
  width: 60vw;
  transition: ease-in-out 1s all;
+ transition: ease-in-out 1s all;
+ animation-name: right;
+ animation-duration: 4.5s;
+ animation-iteration-count: 1;
+ animation-timing-function: ease;
 }
+
+@keyframes right {
+ 0% {
+  transform: translateX(-100px);
+ }
+
+ 100% {
+  transform: translateX(0px);
+ }
+}
+
 
 header .intro .intro_text:hover {
  transform: translateY(20px);
@@ -143,9 +159,11 @@ header .intro .intro_photo img {
  0% {
   transform: translateX(100px);
  }
-90%{
-   transform: translateX(0px);
-}
+
+ 90% {
+  transform: translateX(0px);
+ }
+
  100% {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);

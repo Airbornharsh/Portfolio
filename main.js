@@ -34,7 +34,7 @@ class Skills {
 
 }
 
-class Intro {
+/*class Intro {
  constructor() {
   this.gather();
  }
@@ -49,20 +49,20 @@ class Intro {
   }, 400);
 
  }
-
-
-
-
-
-
-
-
-
 }
+*/
+
+
+
+
+
+
+
+
+
 
 class APP {
  static init() {
-  new Intro();
   new Skills();
  }
 
