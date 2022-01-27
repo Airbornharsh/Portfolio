@@ -12,19 +12,19 @@ html {
 
 body {
  animation-name: zoom;
- animation-duration: 4s;
+ animation-duration: 5s;
  animation-iteration-count: 1;
  animation-timing-function: ease;
  background: rgb(0, 24, 77);
  background: linear-gradient(90deg, rgba(0, 24, 77, 1) 0%, rgba(0, 53, 63, 1) 50%, rgba(0, 69, 65, 1) 100%);
 }
 
-@keyframes zoom{
- 0%{
-  opacity:0;
-  transform:scale(5);
+@keyframes zoom {
+ 0% {
+  opacity: 0;
  }
- 100%{
+
+ 100% {
   opacity: 1;
   transform: scale(1);
  }
@@ -93,7 +93,7 @@ header .intro .intro_text {
  height: 8vw;
  font-size: 1.9vw;
  width: 60vw;
- transition: ease-in-out 1s all ;
+ transition: ease-in-out 1s all;
 }
 
 header .intro .intro_text:hover {
@@ -130,12 +130,33 @@ header .intro .intro_photo img {
  height: 26.04vw;
  width: 26.04vw;
  transition: ease-in-out 1s all;
-}
-
-header .intro .intro_photo img:hover {
+ animation-name: left;
+ animation-duration: 5s;
+ animation-iteration-count: 1;
+ animation-timing-function: ease;
  -webkit-transform: rotate(20deg);
  -moz-transform: rotate(20deg);
  -o-transform: rotate(20deg);
+}
+
+@keyframes left {
+ 0% {
+  transform: translateX(100px);
+ }
+90%{
+   transform: translateX(0px);
+}
+ 100% {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+ }
+}
+
+header .intro .intro_photo img:hover {
+ -webkit-transform: rotate(0deg);
+ -moz-transform: rotate(0deg);
+ -o-transform: rotate(0deg);
 }
 
 #main_container {
