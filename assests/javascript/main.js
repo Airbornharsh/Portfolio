@@ -55,15 +55,19 @@ class Skills {
 class Nav {
  constructor() {
   this.navParent = document.getElementById('nav');
-  this.navUl = this.navParent.querySelector('ul')
-  this.navOpenBt = this.navParent.querySelector('.navopen');
+  this.navUl = document.getElementById('navul')
+  this.navOpenBt = document.getElementById('navopen');
   this.time = 1000;
   this.click();
  }
 
  click() {
   this.checkClicked = false;
-  this.navOpenBt.addEventListener('click', this.checkClickedMethod.bind(this));
+  console.log('ok');
+  this.navOpenBt.addEventListener('click', () => {
+   console.log('hii');
+   this.checkClickedMethod();
+  });
   this.navParent.addEventListener('mouseenter', this.checkClickedMethod.bind(this));
   this.navParent.addEventListener('mouseleave', this.checkClickedMethod.bind(this));
  }
@@ -81,26 +85,18 @@ class Nav {
  clicked() {
   if (this.notClickedInterval) {
    clearInterval(this.notClickedInterval);
-   console.log('clicked');
   }
   this.navUl.style.display = 'flex';
-  this.navOpenBt.style.borderRadius = '6%';
-  this.navParent.style.backgroundColor = 'lightgrey';
   this.clickedInterval = setInterval(() => {
-   this.navUl.style.opacity = 1;
+   this.navUl.style.opacity = 0.6;
   }, 1);
  }
 
  notClicked() {
   if (this.clickedInterval) {
    clearInterval(this.clickedInterval);
-   console.log('notClicked');
   }
   this.navUl.style.opacity = 0;
-  this.navOpenBt.style.borderRadius = '50%';
-  // this.navOpenBt.style.backgroundColor = 'rgba(0, 24, 77, 1)';
-  this.navOpenBt.style.backgroundColor = '#00C2FF';
-  this.navParent.style.backgroundColor = 'transparent';
   this.notClickedInterval = setInterval(() => {
    this.navUl.style.display = 'none';
   }, this.time);
