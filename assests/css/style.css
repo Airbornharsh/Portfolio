@@ -232,7 +232,7 @@ header .intro .intro_photo img:hover {
 }
 
 #about {
- background-image: url("Frame2.png");
+ background-image: url("../images/Frame2.png");
  background-size: cover;
  background-repeat: repeat;
  background-position: center;
