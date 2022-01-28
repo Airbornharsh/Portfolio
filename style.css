@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Dhurjati&family=Dongle&family=Fira+Code:wght@500&family=Odibee+Sans&display=swap');
+/*trying to make a button where someone can access home,about,skills sections easily by clicking it */
+
 
 * {
  padding: 0;
@@ -11,7 +13,7 @@ html {
 }
 
 body {
- animation-name: zoom;
+ /* animation-name: zoom; */
  animation-duration: 5s;
  animation-iteration-count: 1;
  animation-timing-function: ease;
@@ -31,7 +33,6 @@ body {
 }
 
 header {
- position: relative;
  display: flex;
 }
 
@@ -51,10 +52,46 @@ header .intro_background_image {
 }
 
 header .navbar {
- position: absolute;
+ position: fixed;
+ bottom: 25px;
+ right: 25px;
+ transition: all ease-in-out 1s;
+ border-radius: 4px;
+ opacity: 60%;
+}
+
+header .navbar .navopen {
+ /* background-color: rgba(0, 24, 77, 1); */
+ background-color: #00C2FF;
+ height: 80px;
+ width: 80px;
+ border-radius: 50%;
+ transition: all ease-in-out 1s;
+ opacity: 1;
 }
 
 header .navbar ul {
+ opacity: 0;
+ display: none;
+ align-items: center;
+ justify-content: flex-end;
+ flex-direction: column;
+ transition: all ease-in-out 1s;
+}
+
+header .navbar ul li {
+ color: white;
+ list-style: none;
+}
+
+header .navbar ul li img {
+ height: 80px;
+ width: 80px;
+  margin-bottom: 8px;
+}
+
+
+/*header .navbar ul {
  height: 5vw;
  width: 70vw;
  display: flex;
@@ -71,7 +108,7 @@ header .navbar ul li {
  line-height: 63px;
  text-align: center;
  color: #FFFFFF;
-}
+}*/
 
 header .intro {
  width: 100vw;
@@ -364,6 +401,17 @@ header .intro .intro_photo img:hover {
 
  header .intro .intro_text {
   font-size: 2.8vw;
+ }
+
+ header .navbar .navopen {
+  height: 10vw;
+  width: 10vw;
+  }
+
+ header .navbar ul li img {
+  height: 10vw;
+  width: 10vw;
+  margin-bottom: 1vw;
  }
 
  #projects .projects_content ul {
