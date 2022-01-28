@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Dhurjati&family=Dongle&family=Fira+Code:wght@500&family=Odibee+Sans&display=swap');
-/*trying to make a button where someone can access home,about,skills sections easily by clicking it */
-
 
 * {
  padding: 0;
@@ -17,7 +15,6 @@ body {
  animation-duration: 5s;
  animation-iteration-count: 1;
  animation-timing-function: ease;
- background: rgb(0, 24, 77);
  background: linear-gradient(90deg, rgba(0, 24, 77, 1) 0%, rgba(0, 53, 63, 1) 50%, rgba(0, 69, 65, 1) 100%);
 }
 
@@ -79,7 +76,7 @@ header .navbar ul {
  flex-direction: row;
  transition: all ease-in-out 1s;
  justify-content: space-around;
- width:60vw;
+ width: 60vw;
  max-width: 500px;
 }
 
@@ -98,26 +95,6 @@ header .navbar ul li img {
  width: 80px;
  transition: all ease-in-out 1s;
 }
-
-
-/*header .navbar ul {
- height: 5vw;
- width: 70vw;
- display: flex;
- justify-content: space-around;
- align-items: center;
-}
-
-header .navbar ul li {
- font-size: 2.4vw;
- list-style: none;
- font-family: Fira Code;
- font-style: normal;
- font-weight: 600;
- line-height: 63px;
- text-align: center;
- color: #FFFFFF;
-}*/
 
 header .intro {
  width: 100vw;
@@ -139,7 +116,6 @@ header .intro .intro_text {
  height: 8vw;
  font-size: 1.9vw;
  width: 60vw;
- transition: ease-in-out 1s all;
  transition: ease-in-out 1s all;
  animation-name: right;
  animation-duration: 4.5s;
@@ -228,8 +204,6 @@ header .intro .intro_photo img:hover {
 }
 
 #main_container {
- background: rgb(0, 24, 77);
- background: linear-gradient(90deg, rgba(0, 24, 77, 1) 0%, rgba(0, 53, 63, 1) 50%, rgba(0, 69, 65, 1) 100%);
  color: white;
  width: 100vw;
 }
@@ -323,56 +297,76 @@ header .intro .intro_photo img:hover {
  font-family: ABeeZee;
  color: #FFFFFF;
  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ min-height: 70vh;
 }
 
-#projects .projects_content ul {
- display: grid;
- grid-template-columns: 33vw 33vw 33vw;
- max-height: 560px;
- overflow: auto;
- margin-bottom: 30px;
+#projects_Name {
+ width: 90vw;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-column-gap: 10vw;
+  grid-row-gap: 10px;
 }
 
-#projects .projects_content ul li {
+#projects_Name li {
  list-style: none;
+ border: 2px solid white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+font-size: 4vw;
+}
+
+
+
+
+#project_display_container {
+ position: fixed;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ width: 70vw;
+ height: 30vw;
+ display: none;
+ justify-content: space-between;
+ align-items: center;
+ border-radius: 10px;
+ background-color: #2e2e2e;
+ box-shadow: 0px 0px 0px 100vw rgb(0, 10, 0, 0.5);
+ transition: ease-in-out 2s all;
+}
+
+#project_display_container img {
+ border-radius: 10px;
+ object-fit: cover;
+ width: 26vw;
+ height: 30vw;
+}
+
+#project_display_container .details {
  display: flex;
  justify-content: flex-start;
  align-items: center;
  flex-direction: column;
- margin-bottom: 20px;
- transition: ease-in-out 1s all;
- /* -webkit-transform: scale(0.7) rotate(0); */
+ width: 44vw;
+ height: 25vw;
 }
 
-#projects .projects_content ul li:hover {
- -webkit-transform: rotateY(360deg);
- -moz-transform: rotateY(360deg);
- -o-transform: rotateY(360deg);
+#project_display_container .details a {
+ text-decoration: none;
+ color: #08fff3;
+ font-size: 3.2vw;
 }
 
-
-#projects .projects_content ul li img {
- border-radius: 18px;
- object-fit: cover;
- width: 26.4vw;
- height: 27.18vw;
- margin-bottom: 5px;
+#project_display_container .details h5 {
+ margin-top: 1vw;
+ font-size: 2vw;
 }
 
-#projects .projects_content ul li .project_name {
- margin-bottom: 5px;
- font-family: Odibee Sans;
- font-size: 1.9vw;
- color: #FAFF00;
- text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- transform: scaleX(1.6);
-}
-
-#projects .projects_content ul li .project_types {
- font-family: ABeeZee;
- color: #FFFFFF;
- text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- font-size: 1.9vw;
+#project_display_container .details p {
+ margin-top: 2vw;
+ font-size: 1.3vw;
+ width: 35vw;
 }
 
 #contact {
@@ -403,7 +397,7 @@ header .intro .intro_photo img:hover {
  color: #00fff7;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
  #about {
   min-height: 500px;
  }
@@ -426,8 +420,8 @@ header .intro .intro_photo img:hover {
   height: 10vw;
   width: 10vw;
  }
- 
- header .navbar ul{
+
+ header .navbar ul {
   max-width: 50vw;
  }
 
@@ -436,16 +430,37 @@ header .intro .intro_photo img:hover {
   width: 10vw;
  }
 
- #projects .projects_content ul {
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  max-height: 420px;
+ #project_display_container {
+  width: 75vw;
+  height: 70vh;
+  justify-content: flex-start;
+  flex-direction: column;
  }
 
- #projects .projects_content ul li img {
-  width: 40.4vw;
-  height: 41.6vw;
-  margin-bottom: 5px;
+ #project_display_container img {
+  width: 75vw;
+  height: 85vw;
+ }
+
+ #project_display_container .details {
+  width: 60vw;
+  height: auto;
+ }
+
+ #project_display_container .details a {
+  margin-top: 3vw;
+  font-size: 5vw;
+ }
+
+ #project_display_container .details h5 {
+  margin-top: 1vw;
+  font-size: 2.6vw;
+ }
+
+ #project_display_container .details p {
+  margin-top: 2vw;
+  font-size: 2vw;
+  width: 60vw;
  }
 
  #contact .contact_images ul li img {
