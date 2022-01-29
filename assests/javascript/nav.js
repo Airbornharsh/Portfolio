@@ -32,7 +32,7 @@ export class Nav {
   }
   this.navUl.style.display = 'flex';
   this.clickedInterval = setInterval(() => {
-   this.navUl.style.opacity = 0.6;
+   this.navUl.style.opacity = 0.7;
   }, 1);
  }
 
