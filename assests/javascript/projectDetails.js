@@ -10,6 +10,6 @@ export let Projects = [ {
    types: "JavaScript,Html,CSS",
    src: "./assests/images/ProjectImages/Snake_Ladder.jpg",
    des: "You can Play this Game with your Friend or with Someone and Enjoy",
-   href: "https://airbornharsh.github.io/TIC_TAK_TOE/",
+   href:"https://airbornharsh.github.io/Snake_and_Ladder/",
    id: "snakeladder"
  }];

@@ -5,6 +5,7 @@ export class Nav {
   this.navOpenBt = document.getElementById('navopen');
   this.time = 1000;
   this.click();
+  this.navBtClick();
  }
 
  click() {
@@ -12,8 +13,6 @@ export class Nav {
   this.navOpenBt.addEventListener('click', () => {
    this.checkClickedMethod();
   });
- /* this.navParent.addEventListener('mouseenter', this.checkClickedMethod.bind(this));
-  this.navParent.addEventListener('mouseleave', this.checkClickedMethod.bind(this));*/
  }
 
  checkClickedMethod() {
@@ -45,4 +44,27 @@ export class Nav {
    this.navUl.style.display = 'none';
   }, this.time);
  }
+
+
+ navBtClick() {
+  this.lis = this.navUl.querySelectorAll('li');
+  let c = 0;
+  this.lis.forEach((li, c) => {
+   li.addEventListener('click', () => {
+    console.log(c);
+    this.scroll(li.id, c-1);
+   })
+  });
+ }
+
+ scroll(id, c) {
+  let elHeight = 0;;
+  for (let i = 0; i <= c; i++) {
+   const li = document.getElementById(`${this.lis[i].id}_container`)
+   elHeight += li.offsetHeight;
+  }
+  window.scrollTo(0,elHeight);
+ }
+
+
 }

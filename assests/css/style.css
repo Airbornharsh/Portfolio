@@ -207,9 +207,9 @@ header .intro .intro_photo img:hover {
  width: 100vw;
 }
 
-#about,
-#skills,
-#projects {
+#about_container,
+#skills_container,
+#projects_container {
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -217,7 +217,7 @@ header .intro .intro_photo img:hover {
  border-bottom: 2px solid #00C2FF;
 }
 
-#about {
+#about_container {
  background-image: url("../images/Frame2.png");
  background-size: cover;
  background-repeat: repeat;
@@ -225,9 +225,9 @@ header .intro .intro_photo img:hover {
  min-height: 800px;
 }
 
-#about .about_heading,
-#skills .skills_heading,
-#projects .projects_heading {
+#about_container .about_heading,
+#skills_container .skills_heading,
+#projects_container .projects_heading {
  margin: 40px 0px 20px 0px;
  font-family: Dongle;
  text-align: center;
@@ -238,15 +238,15 @@ header .intro .intro_photo img:hover {
  margin-bottom: 20px;
 }
 
-#about .about_heading:hover,
-#skills .skills_heading:hover,
-#projects .projects_heading:hover {
+#about_container .about_heading:hover,
+#skills_container .skills_heading:hover,
+#projects_container .projects_heading:hover {
  transform: scaleX(1.4) translateY(10px);
  border-bottom: 4px solid #FFFFFF;
  padding-bottom: -20px;
 }
 
-#about .about_content {
+#about_container .about_content {
  opacity: 80%;
  width: 85vw;
  font-size: 1.9vw;
@@ -255,11 +255,11 @@ header .intro .intro_photo img:hover {
  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#skills {
+#skills_container {
  padding-bottom: 200px;
 }
 
-#skills .skills_content ul {
+#skills_container .skills_content ul {
  display: grid;
  grid-template-columns: 30vw 30vw 30vw;
  width: 90vw;
@@ -267,7 +267,7 @@ header .intro .intro_photo img:hover {
  margin-bottom: 30px;
 }
 
-#skills .skills_content ul li {
+#skills_container .skills_content ul li {
  transform: scale(0.7);
  opacity: 40%;
  display: flex;
@@ -278,17 +278,17 @@ header .intro .intro_photo img:hover {
  transition: ease-in-out 0.7s all;
 }
 
-#skills .skills_content ul li img {
+#skills_container .skills_content ul li img {
  width: 20vw;
 }
 
-#skills .skills_content ul li .level {
+#skills_container .skills_content ul li .level {
  font-family: Dhurjati;
  text-align: center;
  text-shadow: 0px 4.8px 4.8px rgba(0, 0, 0, 0.25);
 }
 
-#projects .projects_content {
+#projects_container .projects_content {
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -376,22 +376,22 @@ font-size: auto;
  width: 35vw;
 }
 
-#contact {
+#contact_container {
  background: #2C2C2C;
  height: auto;
 }
 
-#contact .contact_images ul {
+#contact_container .contact_images ul {
  display: flex;
  justify-content: space-around;
 }
 
-#contact .contact_images ul li {
+#contact_container .contact_images ul li {
  list-style: none;
  padding: 15px 0px;
 }
 
-#contact .contact_images ul li img {
+#contact_container .contact_images ul li img {
  width: 3.5vw;
  height: 3.5vw;
 }
@@ -405,11 +405,11 @@ font-size: auto;
 }
 
 @media screen and (max-width: 500px) {
- #about {
+ #about_container {
   min-height: 500px;
  }
 
- #about .about_content {
+ #about_container .about_content {
   font-size: 4vw;
  }
 
@@ -476,12 +476,12 @@ font-size: auto;
   width: 60vw;
  }
 
-#contact .contact_images ul li {
+#contact_container .contact_images ul li {
  list-style: none;
  padding: 10px 0px;
 }
 
- #contact .contact_images ul li img {
+ #contact_container .contact_images ul li img {
   width: 6vw;
   height: 6vw;
  }
