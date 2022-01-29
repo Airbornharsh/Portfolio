@@ -3,7 +3,8 @@ import { Projects } from './projectDetails.js';
 export class Project {
  constructor() {
   this.backdrop_Enabled = false;
-  this.display = document.getElementById('project_display_container');
+  this.maindisplay = document.getElementById('project_display_maincontainer');
+  this.display = this.maindisplay.querySelector('#project_display_container');
   this.check();
  }
 
@@ -25,10 +26,10 @@ export class Project {
  }
 
  render(Project) {
-  this.display.style.display = "flex";
+  this.maindisplay.style.display = "block";
   this.display.querySelector('img').src = `${Project.src}`;
-  this.display.querySelector('.details a').href = `${Project.href}`;
-  this.display.querySelector('.details a h3').textContent = `${Project.title}`;
+  this.maindisplay.querySelector('a').href = `${Project.href}`;
+  this.display.querySelector('.details h3').textContent = `${Project.title}`;
   this.display.querySelector('.details h5').textContent = `${Project.types}`;
   this.display.querySelector('.details p').textContent = `${Project.des}`;
   this.backdrop_Enabled = true;
@@ -38,9 +39,10 @@ export class Project {
  derender() {
   if (this.backdrop_Enabled == true) {
    console.log("checked");
-   window.onscroll(() => {
-    this.display.style.display = 'none';
+   document.getElementById('project_display_maincontainer').addEventListener('click', () => {
+    this.maindisplay.style.display = 'none';
     this.backdrop_Enabled = false;
+
    })
   }
  }
