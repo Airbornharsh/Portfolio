@@ -39,9 +39,11 @@ export class Project {
  derender() {
   if (this.backdrop_Enabled == true) {
    console.log("checked");
-   document.getElementById('project_display_maincontainer').addEventListener('click', () => {
+   setInterval(()=>{
+       document.querySelector('body').addEventListener('click', () => {
     this.maindisplay.style.display = 'none';
     this.backdrop_Enabled = false;
+   },1);
 
    })
   }
